@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <ion-app>
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Calculator</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-item>
+          <ion-label position="floating">Number A</ion-label>
+          <ion-input type="number" id="num1"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Number B</ion-label>
+          <ion-input type="number" id="num2"></ion-input>
+        </ion-item>
+        <div class="ion-text-center ion-margin-top">
+          <ion-button onclick="calculate()">Calculate</ion-button>
+          <ion-button fill="outline" onclick="reset()">Reset</ion-button>
+        </div>
+        <ion-row>
+          <ion-col id="result"> </ion-col>
+        </ion-row>
+      </ion-content>
+    </ion-app>
+  </body>
+</html>
